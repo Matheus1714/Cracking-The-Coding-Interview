@@ -1,0 +1,6 @@
+venv
+**/.*exe
+**/__pycache__
+**/*.pyc
+**/*.code-workspace
+**/.pytest_cache
