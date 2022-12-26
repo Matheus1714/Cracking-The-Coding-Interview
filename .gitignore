@@ -4,3 +4,4 @@ venv
 **/*.pyc
 **/*.code-workspace
 **/.pytest_cache
+**/.vscode
