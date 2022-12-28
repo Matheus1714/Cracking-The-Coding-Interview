@@ -1,5 +1,3 @@
-import unittest
-
 def is_unique_chars(s:str):
     if len(s) > 128:
         return False
@@ -12,6 +10,8 @@ def is_unique_chars(s:str):
         char_set[i] = True
 
     return True
+
+import unittest
 
 class Test(unittest.TestCase):
     dataT = [('a'), ('12'), ('123'), ('abcd'), ('s4fad'), ('')]
@@ -26,6 +26,3 @@ class Test(unittest.TestCase):
         for test_string in self.dataF:
             actual = is_unique_chars(test_string)
             self.assertFalse(actual)
-
-if __name__ == "__main__":
-    unittest.main()
