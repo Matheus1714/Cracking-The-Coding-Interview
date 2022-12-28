@@ -1,4 +1,3 @@
-import unittest
 from typing import List, Tuple
 
 MatrixMN = List[List]
@@ -37,30 +36,3 @@ def zero_matrix(matrix:MatrixMN)->MatrixMN:
     zero_matrix = get_zero_matrix(matrix, M, N, zeros)
     return zero_matrix
     
-class Test(unittest.TestCase):
-
-    def test_simple_example(self):
-        matrix = [
-            [1, 2, 3, 4, 1, 4, 1, 3],
-            [0, 2, 3, 4, 1, 0, 2, 3],
-            [3, 1, 2, 3, 4, 5, 1, 2],
-            [1, 2, 3, 4, 4, 5, 2, 1],
-            [3, 4, 5, 6, 7, 3, 5, 1],
-            [1, 2, 4, 3, 1, 2, 4, 5],
-            [1, 1, 2, 3, 4, 5, 4, 2],
-            [1, 2, 4, 5, 2, 1, 2, 4],
-        ]
-        expeted = [
-            [0, 2, 3, 4, 1, 0, 1, 3],
-            [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 1, 2, 3, 4, 0, 1, 2],
-            [0, 2, 3, 4, 4, 0, 2, 1],
-            [0, 4, 5, 6, 7, 0, 5, 1],
-            [0, 2, 4, 3, 1, 0, 4, 5],
-            [0, 1, 2, 3, 4, 0, 4, 2],
-            [0, 2, 4, 5, 2, 0, 2, 4],
-        ]
-        self.assertEqual(zero_matrix(matrix), expeted)
-
-if __name__ == '__main__':
-    unittest.main()

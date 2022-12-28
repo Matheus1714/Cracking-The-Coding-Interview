@@ -1,6 +1,4 @@
 from typing import List
-import unittest
-from random import randint
 
 Matrix = List[List]
 
@@ -23,15 +21,3 @@ def rotate(matrix:Matrix)->bool:
             matrix[i][last ] = top
     return True
 
-class Test(unittest.TestCase):
-
-    def test_simple_example(self):
-        matrix = [
-            [1, 2],
-            [3, 4]
-        ]
-        expeted = True
-        self.assertEqual(rotate(matrix), expeted)
-
-if __name__ == '__main__':
-    unittest.main()

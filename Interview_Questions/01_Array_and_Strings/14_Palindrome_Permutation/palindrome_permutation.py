@@ -1,4 +1,3 @@
-import unittest
 from collections import Counter
 
 def verify_polindrome(s:str):
@@ -21,13 +20,3 @@ def verify_polindrome(s:str):
                 return False
 
     return True
-
-class Test(unittest.TestCase):
-    
-    def test_book_example(self):
-        s = 'tact coa'
-        self.assertTrue(s)
-
-
-if __name__ == '__main__':
-    unittest.main()
