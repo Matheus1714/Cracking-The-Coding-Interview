@@ -5,3 +5,4 @@ venv
 **/*.code-workspace
 **/.pytest_cache
 **/.vscode
+**/*.pdf
